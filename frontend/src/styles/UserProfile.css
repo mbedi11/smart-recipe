@@ -94,8 +94,8 @@
   }
   
   .icon {
-    width: 20px; /* Set a smaller width for the icon */
-    height: 20px; /* Set a smaller height for the icon */
+    width: 12px; /* Set a smaller width for the icon */
+    height: 12px; /* Set a smaller height for the icon */
     object-fit: contain; /* Ensure the image fits within its container */
     display: inline-flex; /* Ensures proper alignment */
   margin-right: 0.5rem; /* Adds space between the icon and text */
@@ -153,6 +153,7 @@
     left: 0.5rem;
     top: 50%;
     transform: translateY(-50%);
+    bottom: -0.6rem;
   }
   
   .search-input {

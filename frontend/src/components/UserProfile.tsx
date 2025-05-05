@@ -56,7 +56,9 @@ export function UserProfile() {
           <div className="content-header">
             <h1>My Favorite Recipes</h1>
             <div className="search-container">
-              <span className="search-icon">🔍</span>
+              <span className="search-icon">
+                <img className="icon" src="..\src\assets\icons\search-symbol.png" alt="povecalo" />
+              </span>
               <input
                 type="text"
                 placeholder="Search favorites..."

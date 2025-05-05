@@ -30,7 +30,7 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
             className={`favorite-button ${isFavorite ? "active" : ""}`}
             onClick={handleToggleFavorite}
           >
-            {isFavorite ? "❤️" : "🤍"}
+            {isFavorite ? <img width="14px" height="14px" src="..\src\assets\icons\fav-heart.png" alt="liked" /> : <img width="14px" height="14px" src="..\src\assets\icons\fav-empty-heart.png" alt="unliked" /> }
           </button>
         </div>
 
@@ -39,7 +39,7 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
             <h3 className="recipe-title">{recipe.title}</h3>
             <p className="recipe-author">{recipe.author}</p>
           </div>
-          <div className="recipe-rating">⭐ {recipe.rating}</div>
+          <div className="recipe-rating"><img className="icon" src="..\src\assets\icons\star.png" alt="star" /> {recipe.rating}</div>
         </div>
 
         <div className="recipe-content">
@@ -52,7 +52,7 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
             ))}
           </div>
 
-          <div className="recipe-time">⏱️ {recipe.cookTime} mins</div>
+          <div className="recipe-time"> <img className="icon" src="..\src\assets\icons\clock.png" alt="clock" /> {recipe.cookTime} mins</div>
         </div>
 
         <div className="recipe-footer">
@@ -62,7 +62,7 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
           >
             View Recipe
           </button>
-          <button className="share-button">📤</button>
+          <a href="share.com"><img className="icon" src="..\src\assets\icons\share.png" alt="share" /></a>
         </div>
       </div>
 

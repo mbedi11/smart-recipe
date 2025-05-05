@@ -26,8 +26,8 @@
     right: 0.5rem;
     width: 2rem;
     height: 2rem;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(207, 207, 207, 0.8);
+    border-radius: 10%;
     border: none;
     display: flex;
     align-items: center;
@@ -73,6 +73,8 @@
   
   .recipe-content {
     padding: 0 1rem 1rem;
+   
+
   }
   
   .recipe-tags {
@@ -83,20 +85,23 @@
   }
   
   .recipe-category {
-    background-color: #f0f9ff;
-    color: #0369a1;
+    background-color: #f2f0f0;
+    color: #000000;
     padding: 0.25rem 0.5rem;
-    border-radius: 0.25rem;
+    border-radius: 1rem;
     font-size: 0.75rem;
     font-weight: 500;
+    outline: 1px solid #000000;
   }
   
   .recipe-tag {
-    background-color: #f1f5f9;
-    color: #64748b;
+    background-color: #ffffff;
+    color: #000000;
     padding: 0.25rem 0.5rem;
-    border-radius: 0.25rem;
+    border-radius: 1rem;
     font-size: 0.75rem;
+    outline: 1px solid #000000;
+    
   }
   
   .recipe-time {
@@ -113,7 +118,7 @@
   }
   
   .view-recipe-button {
-    background-color: #3b82f6;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 0.25rem;
@@ -124,20 +129,16 @@
   }
   
   .view-recipe-button:hover {
-    background-color: #2563eb;
+    background-color: #ffffff;
+    color: #000000;
   }
   
-  .share-button {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 0.25rem;
-    background-color: transparent;
-    border: 1px solid #e2e8f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.2s;
+  .icon {
+    object-fit: contain;/* Ensure the image fits within its container */
+    display: inline-flex; /* Ensures proper alignment */
+  margin-right: 0.5rem; /* Adds space between the icon and text */
+  align-items: center; /* Vertically centers the icon */
+  
   }
   
   .share-button:hover {
