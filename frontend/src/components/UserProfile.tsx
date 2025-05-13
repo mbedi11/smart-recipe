@@ -29,19 +29,19 @@ export function UserProfile() {
 
         <div className="sidebar-nav">
           <button className="sidebar-button">
-            <span className="icon"><img src="..\src\assets\icons\sidebar_user.png" alt="Profile Icon" /></span>
+            <span className="user_icon"><img src="..\src\assets\icons\sidebar_user.png" alt="Profile Icon" /></span>
             Profile
           </button>
           <button className="sidebar-button active">
-            <span className="icon"><img src="../src/assets/icons/sidebar_heart.png" alt="Favorites Icon" /></span>
+            <span className="user_icon"><img src="../src/assets/icons/sidebar_heart.png" alt="Favorites Icon" /></span>
             Favorites
           </button>
           <button className="sidebar-button">
-            <span className="icon"><img src="../src/assets/icons/sidebar_chef_hat.png" alt="Recipes Icon" /></span>
+            <span className="user_icon"><img src="../src/assets/icons/sidebar_chef_hat.png" alt="Recipes Icon" /></span>
             My Recipes
           </button>
           <button className="sidebar-button">
-            <span className="icon"><img src="../src/assets/icons/sidebar_cogwheel.png" alt="Settings Icon" /></span>
+            <span className="user_icon"><img src="../src/assets/icons/sidebar_cogwheel.png" alt="Settings Icon" /></span>
             Settings
           </button>
         </div>

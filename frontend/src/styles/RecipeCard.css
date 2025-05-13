@@ -4,6 +4,7 @@
     background-color: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+    position: relative;
   }
   
   .recipe-card:hover {
@@ -55,9 +56,9 @@
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
   }
   
   .recipe-author {
@@ -112,12 +113,17 @@
   }
   
   .recipe-footer {
-    display: flex;
+    display: relative;
     justify-content: space-between;
+    align-items: center;
     padding: 0 1rem 1rem;
+    text-align: right;
   }
   
   .view-recipe-button {
+    position: absolute;
+    bottom: 1rem; /* Place it at the bottom */
+  left: 1rem; /* Place it on the left */
     background-color: #000000;
     color: white;
     border: none;
@@ -134,15 +140,30 @@
   }
   
   .icon {
-    object-fit: contain;/* Ensure the image fits within its container */
-    display: inline-flex; /* Ensures proper alignment */
-  margin-right: 0.5rem; /* Adds space between the icon and text */
-  align-items: center; /* Vertically centers the icon */
-  
+    /* object-fit: contain;/* Ensure the image fits within its container */
+   /* display: inline-flex; /* Ensures proper alignment */
+ /* margin-right: 0.5rem; /* Adds space between the icon and text */
+  /*align-items: center; Vertically centers the icon */
+  width: 12px; /* Set a smaller width for the icon */
+  height: 12px; /* Set a smaller height for the icon */
+  object-fit: contain; /* Ensure the image fits within its container */
+  display: inline-flex; /* Ensures proper alignment */
+margin-right: 0;/* Adds space between the icon and text */
+align-items: center; /* Vertically centers the icon */
   }
   
   .share-button:hover {
     background-color: #f8fafc;
   }
   
-  
+  .share-button {
+  display: inline-block;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  width: auto; /* Let it size to content, but with minimum width */
+  height: auto;
+  /*margin-right: 20px;*/
+  margin-bottom: 5px;
+  }

@@ -39,7 +39,7 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
             <h3 className="recipe-title">{recipe.title}</h3>
             <p className="recipe-author">{recipe.author}</p>
           </div>
-          <div className="recipe-rating"><img className="icon" src="..\src\assets\icons\star.png" alt="star" /> {recipe.rating}</div>
+         <div className="recipe-rating"> <span className="user_icon"><img  src="..\src\assets\icons\star.png" alt="star" /></span>{recipe.rating}</div>
         </div>
 
         <div className="recipe-content">
@@ -62,7 +62,7 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
           >
             View Recipe
           </button>
-          <a href="share.com"><img className="icon" src="..\src\assets\icons\share.png" alt="share" /></a>
+          <a className="share-button"href="share.com"><img className="icon" src="..\src\assets\icons\share.png" alt="share" /></a>
         </div>
       </div>
 

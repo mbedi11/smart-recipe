@@ -93,7 +93,7 @@
     border-color: #bae6fd; /* Active button border color */
   }
   
-  .icon {
+  .user_icon {
     width: 12px; /* Set a smaller width for the icon */
     height: 12px; /* Set a smaller height for the icon */
     object-fit: contain; /* Ensure the image fits within its container */
